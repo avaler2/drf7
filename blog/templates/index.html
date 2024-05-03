@@ -9,11 +9,12 @@
 
 <body>
     <h1>Welcome to my Django app</h1>
-    <ul>
-    {% for post in posts %}
-    <li>{{post.title}}</li>
-    {% endfor %}
-    </ul>
+    <h2>TOP 10 posts in the last month</h2>
+    <ol>
+        {% for post in posts %}
+        <li>{{post.title}}</li>
+        {% endfor %}
+    </ol>
 </body>
 
 </html>
